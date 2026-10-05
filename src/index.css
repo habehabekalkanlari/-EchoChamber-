@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  h1, h2, h3, .font-display {
+    font-family: 'Syne', sans-serif;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom sound wave pulse animation */
+@keyframes waveBar {
+  0%, 100% { height: 15%; }
+  50% { height: 100%; }
+}
+
+.animate-wave-bar {
+  animation: waveBar 1.2s ease-in-out infinite;
+}
+
+/* Cosmic ripple for Deja-Vu */
+@keyframes cosmicRipple {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.05); opacity: 0.4; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+.animate-cosmic-ripple {
+  animation: cosmicRipple 3s ease-in-out infinite;
+}
+
+/* Floating Rising Score Animation for Star Voting */
+@keyframes riseAndFade {
+  0% {
+    opacity: 0;
+    transform: translateY(6px) scale(0.85);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(-8px) scale(1.1);
+  }
+  75% {
+    opacity: 0.9;
+    transform: translateY(-28px) scale(1.05);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-44px) scale(0.95);
+  }
+}
+
+.animate-rise-fade {
+  animation: riseAndFade 1.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Golden Glow Pulse for Star Rating */
+@keyframes goldenGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 25px 6px rgba(245, 158, 11, 0.45);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
+  }
+}
+
+.animate-golden-glow {
+  animation: goldenGlow 1.2s ease-out;
+}
+
+

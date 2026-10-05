@@ -1,0 +1,10 @@
+{
+  "name": "EchoChamber & Deja-Vu",
+  "description": "Sesli Karakter Değiştirme ve Anonim Tartışma Arenası ile Ortak Anı ve Senkronize Senaryo Oyunu",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
